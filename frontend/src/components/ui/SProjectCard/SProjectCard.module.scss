@@ -1,0 +1,28 @@
+.container {
+	margin-top: 80px;
+	vertical-align: middle;
+	width: fit-content;
+
+	&__img {
+		height: 100%;
+		width: 100%;
+	}
+
+	.projectInfo {
+		display: flex;
+		align-items: center;
+
+		&__name {
+			font-size: 2.4rem;
+			font-weight: 500;
+			color: #ffffff;
+			margin-inline-end: 2.4rem;
+		}
+
+		&__category {
+			font-size: 2rem;
+			font-weight: 400;
+			color: #ffffff;
+		}
+	}
+}

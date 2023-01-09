@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "types",
+  "info": {
+    "singularName": "type",
+    "pluralName": "types",
+    "displayName": "type"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "project": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::project.project",
+      "inversedBy": "types"
+    }
+  }
+}

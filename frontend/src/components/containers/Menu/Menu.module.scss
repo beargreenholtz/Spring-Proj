@@ -1,0 +1,233 @@
+@keyframes gradientBackground {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes move {
+	100% {
+		transform: translate3d(0, 0, 1px) rotate(360deg);
+	}
+}
+
+.container {
+	display: flex;
+	// background: linear-gradient(-45deg, #f67a7c, #f9c55f, #bb8ce1, #fff);
+	// animation: gradientBackground 35s ease infinite;
+	// background-size: 400% 100%;
+	// animation-direction: alternate;
+
+	.background {
+		position: fixed;
+		width: 100vw;
+		height: 100vh;
+		top: 0;
+		left: 0;
+		background: #f4edd6;
+		overflow: hidden;
+	}
+
+	.background span {
+		width: 33vmin;
+		height: 33vmin;
+		border-radius: 33vmin;
+		backface-visibility: hidden;
+		position: absolute;
+		animation: move;
+		animation-duration: 13;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+	}
+
+	.background span:nth-child(0) {
+		color: #f6c0b7;
+		top: 3%;
+		left: 78%;
+		animation-duration: 158s;
+		animation-delay: -125s;
+		transform-origin: 18vw -14vh;
+		box-shadow: 66vmin 0 9.011102102495471vmin currentColor;
+	}
+	.background span:nth-child(1) {
+		color: #ffacac;
+		top: 24%;
+		left: 32%;
+		animation-duration: 81s;
+		animation-delay: -129s;
+		transform-origin: -19vw -10vh;
+		box-shadow: 66vmin 0 9.136898302662802vmin currentColor;
+	}
+	.background span:nth-child(2) {
+		color: #dbc5dd;
+		top: 23%;
+		left: 99%;
+		animation-duration: 80s;
+		animation-delay: -132s;
+		transform-origin: 2vw -9vh;
+		box-shadow: -66vmin 0 8.506177862363801vmin currentColor;
+	}
+	.background span:nth-child(3) {
+		color: #ffacac;
+		top: 38%;
+		left: 92%;
+		animation-duration: 119s;
+		animation-delay: -36s;
+		transform-origin: 15vw -23vh;
+		box-shadow: -66vmin 0 8.880738260898784vmin currentColor;
+	}
+	.background span:nth-child(4) {
+		color: #ffacac;
+		top: 92%;
+		left: 72%;
+		animation-duration: 15s;
+		animation-delay: -26s;
+		transform-origin: -3vw 9vh;
+		box-shadow: 66vmin 0 8.757885265667046vmin currentColor;
+	}
+	.background span:nth-child(5) {
+		color: #f6c0b7;
+		top: 14%;
+		left: 82%;
+		animation-duration: 26s;
+		animation-delay: -44s;
+		transform-origin: -15vw 25vh;
+		box-shadow: -66vmin 0 8.312104290889536vmin currentColor;
+	}
+	.background span:nth-child(6) {
+		color: #ffacac;
+		top: 44%;
+		left: 11%;
+		animation-duration: 92s;
+		animation-delay: -149s;
+		transform-origin: -20vw 0vh;
+		box-shadow: 66vmin 0 8.829267322082861vmin currentColor;
+	}
+	.background span:nth-child(7) {
+		color: #ffacac;
+		top: 56%;
+		left: 11%;
+		animation-duration: 123s;
+		animation-delay: -1s;
+		transform-origin: 22vw -24vh;
+		box-shadow: 66vmin 0 8.506324210230154vmin currentColor;
+	}
+	.background span:nth-child(8) {
+		color: #ffacac;
+		top: 33%;
+		left: 66%;
+		animation-duration: 127s;
+		animation-delay: -28s;
+		transform-origin: 8vw 5vh;
+		box-shadow: -66vmin 0 9.044895258789017vmin currentColor;
+	}
+	.background span:nth-child(9) {
+		color: #f6c0b7;
+		top: 93%;
+		left: 91%;
+		animation-duration: 124s;
+		animation-delay: -48s;
+		transform-origin: 22vw -11vh;
+		box-shadow: -66vmin 0 8.547888240111178vmin currentColor;
+	}
+	.background span:nth-child(10) {
+		color: #f6c0b7;
+		top: 31%;
+		left: 82%;
+		animation-duration: 118s;
+		animation-delay: -148s;
+		transform-origin: 25vw -7vh;
+		box-shadow: -66vmin 0 8.387140223760147vmin currentColor;
+	}
+	.background span:nth-child(11) {
+		color: #ffacac;
+		top: 33%;
+		left: 4%;
+		animation-duration: 145s;
+		animation-delay: -101s;
+		transform-origin: 23vw 18vh;
+		box-shadow: 66vmin 0 9.083624677420673vmin currentColor;
+	}
+	.background span:nth-child(12) {
+		color: #ffacac;
+		top: 86%;
+		left: 29%;
+		animation-duration: 129s;
+		animation-delay: -75s;
+		transform-origin: 1vw 13vh;
+		box-shadow: 66vmin 0 8.53028672499187vmin currentColor;
+	}
+
+	.innerMenu {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+
+		.navigateBackButton {
+			position: absolute;
+			left: 16px;
+			top: 16px;
+			display: flex;
+		}
+
+		.brandLogo {
+			position: absolute;
+			top: 16px;
+			margin-inline-end: 16px;
+			width: 511px;
+			height: 140px;
+
+			&__icon {
+				fill: #000000;
+				width: 100%;
+				height: 100%;
+				-moz-transition: all 0.4s ease-in;
+				-o-transition: all 0.4s ease-in;
+				-webkit-transition: all 0.4s ease-in;
+				transition: all 0.4s ease-in;
+			}
+		}
+
+		.navigationContainer {
+			position: absolute;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			bottom: 65px;
+			right: 68px;
+
+			&__button {
+				font-weight: 500;
+				font-size: 9.6rem;
+				color: #000000;
+				border-bottom: 5px solid transparent;
+				-webkit-transition: all 0.5s ease-out;
+				-moz-transition: all 0.5s ease-out;
+				-o-transition: all 0.5s ease-out;
+				-ms-transition: all 0.5s ease-out;
+				transition: all 0.5s ease-out;
+
+				&:hover {
+					border-bottom: 5px solid #000000;
+					-webkit-transition: all 0.5s ease-in;
+					-moz-transition: all 0.5s ease-in;
+					-o-transition: all 0.5s ease-in;
+					-ms-transition: all 0.5s ease-in;
+					transition: all 0.5s ease-in;
+				}
+			}
+
+			&__button:not(:last-child) {
+				margin-top: 8px;
+			}
+		}
+	}
+}

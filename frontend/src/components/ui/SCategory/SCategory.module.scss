@@ -1,0 +1,14 @@
+.container {
+	border: 2px solid #5f5e5e;
+	border-radius: 30px;
+	padding: 8px;
+	color: #ffffff;
+	font-size: 3.2rem;
+
+	&--selected {
+		border: 2px solid #fcf5d9;
+	}
+}
+.container:not(:last-child) {
+	margin-inline-end: 24px;
+}
